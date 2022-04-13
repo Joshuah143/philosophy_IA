@@ -8,6 +8,7 @@
 \usepackage{floatrow}
 \graphicspath{ {images} }
 \doublespacing
+\usepackage{pdfpages} 
 \usepackage{geometry}
 \geometry{
  left=25.4mm,
@@ -26,11 +27,11 @@
 \maketitle
 
 \begin{center}
-Word count: 1815
+Word count: 1840
 
 Stimulus: An image of a computer 
 
-Connection to course: 
+Connection to course: Optional theme of epistemology
 \end{center}
 \end{titlepage}
 
@@ -40,8 +41,8 @@ Connection to course:
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=10cm]{newpi}
-    \caption{Stimulus materiel}
+    \includegraphics[width=8cm]{new1}
+    \caption{Stimulus materiel, image of a computer}
     \label{fig:mesh1}
 \end{figure}
 
@@ -51,15 +52,15 @@ This is the image of a single board computer. This computer, much like all compu
 
 \newpage
 
-I wake up every morning to the shrill tone of my phone alarm, check my messages, and drive to school. Each and every one of those steps including the countless other small intermediate processes rely on the functioning of the computers around me. If they ceased to function for even a second, the order of my day could be turned upside down. Through my investigation of the computer systems that make up this ever-present digital world, one thing became clear. They rely on absolute truth and absolute false to function. In essence, computers are simply logic machines that run on the standard logical system using operators like ‘and’ (conjunction), ‘or’ (disjunction), ‘not’ (negation), and ‘then’ (implication). When these operations fail they fail spectacularly, like in 2006 when an election changed in Sweden when a single computational conjunction operator returned the wrong result. This poses the seemingly obvious question of what if something isn’t true or false?
+I wake up every morning to the shrill tone of my phone alarm, check my messages, and drive to school. Each and every one of those steps including the countless other small intermediate processes rely on the functioning of the computers around me. If they ceased to function for even a second, the order of my day could be turned upside down. Through my investigation of the computer systems that make up this ever-present digital world, one thing became clear. They rely on absolute truth and absolute false to function. In essence, computers are simply logic machines that run on the standard logical system using operators like ‘and’ (conjunction), ‘or’ (disjunction), ‘not’ (negation), and ‘then’ (implication). When these operations fail they fail spectacularly, like in 2006 when an election changed in Sweden when a single computational conjunction operator returned the wrong result. These features of computing pose the seemingly obvious question of what if something isn’t true or false.
 
-This may seem like an easy question to answer, everything is either true or false. However, as soon as one looks behind the curtain on why some ideas are considered true it becomes glaringly obvious that few things, if any, are perfectly true or false. For example, the statement ‘tomorrow, the sky will be blue’ is very likely true, but because it hasn’t happened yet, it possesses some kind of chronological uncertainty in the same way that all things that haven’t happened yet do. 
+This may seem like an easy question to answer; everything is either true or false. However, as soon as one looks behind the curtain on why some ideas are considered true it becomes clear that few things, if any, are perfectly true or false because of the nature of knowledge as a far more probable than absolute practise. For example, the statement ‘tomorrow, the sky will be blue’ is very likely true, but because it hasn’t happened yet, it possesses some kind of chronological uncertainty in the same way that all things that haven’t happened yet do. 
 
 Most philosophers and logicians have settled into one of two camps. The first is those who believe in bivalence. This set of philosophers will generally tell you that all logical statements can be categorized as true or false, with no middle values. Specifically, those who only believe in 2-valued logics are termed monists. The second is those who believe in many-valued logic. They will tell you that there is at least one value that isn’t true or false. Though this is where the real discussion happens because of the multitude of answers to that guiding question. In fact, there are so many that they are simply categorized as ‘non-standard’ logic. 
 
-What becomes clear is that there is a strong need to quantify this ‘non-standard’ logic into something that can be worked with by computers and humans alike. So far two things are established, uncertainty exists, and that uncertainty needs to be factored into any logical perspective of the world (like that of computers). Currently, this is done through one primary method, simply evaluating against a threshold to determine the truth of a statement (otherwise called “threshold logic”). Rather than attempt to propagate uncertainty through each statement, you simply evaluate each premise or variable of the statement at some threshold to collapse it into a bivalent (true or false) state where traditional logic can function. This approach is however fundamentally flawed because it chooses to ignore almost all of the complexity present in our world by using some arbitrary threshold for true or false. Say that a scientist knows that there is an 80\% chance that some arbitrary event has passed. Would it be reasonable to ask if that event had happened and only accept true or false as answers? Of course not, this is ridiculous precisely because it removes the degree of uncertainty that is key to the truth.
+What becomes clear is that there is a strong need to quantify this ‘non-standard’ logic into something that can be worked with by computers and humans alike. So far, two things are established: uncertainty exists, and that uncertainty needs to be factored into any logical perspective of the world (like that of computers). Currently, this is done through one primary method, simply evaluating against a threshold to determine the truth of a statement (otherwise called “threshold logic”). Rather than attempt to propagate uncertainty through each statement, evaluate each premise or variable of the statement at some threshold to collapse it into a bivalent (true or false) state where traditional logic can function. This approach is, however, fundamentally flawed because it chooses to ignore almost all of the complexity present in our world by using some arbitrary threshold for true or false. Say that a scientist knows that there is an 80\% chance that some arbitrary event has passed. Would it be reasonable to ask if that event had happened and only accept true or false as answers? Of course not, this is ridiculous precisely because it removes the degree of uncertainty that is key to the truth. By only accepting true and false, the statement attempts to remove the probabilistic nature of the world by abstracting it away with true and false. All things in our universe obey simple probabilistic principles, so ignoring those probabilities necessarily impedes the creation of cogent logic or tautologies.
 
-There are a few attempts to reconcile traditional logic with uncertainty. The first was done by Jan Łukasiewicz in the 1920s through his unpublished work. His approach has since been termed modal logic since it adds an intermediate value. He proposed a third value, one of uncertainty. Where not only is there true and false, but also some third value to represent uncertainty of all types. There are a few flaws in this line of reasoning because it assumes that all types and quantities of uncertainty are the same. That is to say, the statement ‘this document contains no German spelling errors’ and ‘we exist in a multiverse’ are treated exactly the same despite one being almost unknowable and the other being almost certainly true. The second main flaw is that no matter how you quantify uncertainty, the different types of uncertainty result in fundamentally different truth tables. For example, both of the tables below are emergent dependent on your interpretation of uncertainty.
+There are a few attempts to reconcile traditional logic with uncertainty. The first was done by Jan Łukasiewicz in the 1920s through his unpublished work. His approach has since been termed modal logic since it adds an intermediate value. He proposed a third value, one of uncertainty. Where not only is there true and false, but also some third value to represent uncertainty of all types. There are a few flaws in this line of reasoning because it assumes that all types and quantities of uncertainty are the same. That is to say, the statement ‘this document contains no German spelling errors’ and ‘we exist in a multiverse’ are treated exactly the same despite one being almost certainly true and the other being almost unknowable . The second main flaw is that no matter how you quantify uncertainty, the different types of uncertainty result in fundamentally different truth tables. For example, both of the tables below are emergent dependent on your interpretation of uncertainty.
 
 
 \begin{figure}[!ht]
@@ -72,7 +73,7 @@ There are a few attempts to reconcile traditional logic with uncertainty. The fi
         \includegraphics[width=7cm]{/right.png}   % Just a dummy. Replace with your figure.
       }
     \end{floatrow}
-  \end{figure}
+\end{figure}
 
 
 Both interpretations are nearly identical, except for the statement $U\Rightarrow U$. Figure \ref{fig:kleen} is a far more traditional understanding than if you are talking about uncertainties then the result will necessarily be uncertain. An example of this interpretation might be ‘if a train leaves the station tomorrow, then the moon will be green tomorrow’. Obviously, because both variables are uncertain, the result will be uncertain. However, figure \ref{fig:luka} seems to indicate that this could be a true statement. For example, ‘if the train leaves the station tomorrow, then the train will have left the station tomorrow morning’. This statement seems to point towards the second interpretation of uncertainty. This is only the beginning considering that both of these logics have strong and weak variants for the combinations of true, false, and uncertain. For each of these interpretations, a set of logical statements can exist to support them much like these two. In this case, because there are multiple systems that break down in certain cases, but prove correct in certain circumstances, it points towards some underlying truth table that differentiates between each of these cases.
@@ -97,34 +98,13 @@ That’s not to say that Gödel’s system is more correct though. Much like Łu
 
 Much like in the case of 3 valued logic, the fact that they both have cases in which they are correct and cases in which they return the wrong result alludes to some underlying more fundamental issue that can’t just be resolved by increasing the number of degrees of truth. So far this has stumped some of the brightest minds in logic and has led to a variety of other non-classical variations of Aristotle’s original logic like quantum logic, non-reflexive logic, and paraconsistent logic. Each of these systems attempts to address one or more fundamental flaws in tradition, modal, and many-valued logics.
 
-Since all of these logics seem to share one fundamental issue with the way that they consider all types of uncertainty fungible. It is clear to me that any solution must differentiate between different types of uncertainty. For example, epistemic, definitional, and chronological uncertainty should all be treated separately. It is clear to me that the solution is to create a system where we differentiate between true, and false, as well as each type of uncertainty. To put this into logical terms, each premise should be a combination of separate uncertainties. For example, the statement ‘the sky will be blue tomorrow’ should have chronological uncertainty because it hasn’t happened yet, definitionally uncertainty because blue is purely subjective, and every type of uncertainty that could impact it. However, this already presents one issue, identifying every type of uncertainty and quantifying them is a highly intractable problem. Ideally, we would apply the rules presented in Łukasiewicz’s logic in a property-wise fashion so that any conclusions include all of the types of uncertainty already presented.
+Since all of these logics seem to share one fundamental issue with the way that they consider all types of uncertainty fungible. It is clear to me that any solution must differentiate between different types of uncertainty. For example, epistemic, definitional, and chronological uncertainty should all be treated separately. It is clear to me that the solution is to create a system where we differentiate between true, and false, as well as each type of uncertainty. To put this into logical terms, each premise should be a combination of separate uncertainties. For example, the statement ‘the sky will be blue tomorrow’ should have chronological uncertainty because it hasn’t happened yet, definitionally uncertainty because blue is purely subjective, and every type of uncertainty that could impact it. However, identifying every type of uncertainty and quantifying them is a highly intractable problem. Ideally, we would apply the rules presented in Łukasiewicz’s logic in a property-wise fashion so that any conclusions include all of the types of uncertainty already presented.
 
 No matter how much you break uncertainty down into its parts, the issue of symmetry remains unaddressed. For this reason, I think it is far more accurate to characterize true and false separately. This means that you could use a spectrum of -1 to 1 instead of 0 to 1. This could be any experiment where it is far easier to prove truth than falsity or vice versa. For example, the statement, ‘there is a toaster in orbit around the sun' is far easier proved than disproved because proving it is as simple as a photo, whereas a disproof would involve a comprehensive survey of all of space. This in combination with connecting the value to the possibility rather than some arbitrary value could be far more useful. So instead of setting an arbitrary value of 0.1 to ‘a ship will sail tomorrow’, we would attempt to evaluate the possibility of such a thing happening.
 
-Though this is far from my own logical calculus, it’s clear now that the approach taken by philosophers like Gödel and Łukasiewicz, while very useful, are limited by their unclear definitions of uncertainty and their treatment of uncertainty as one cohesive similar issue. Any solution to the problem of formalizing uncertain non-classical logic must either consider these in a similar way to myself or reimagine logic entirely (possibly from a deterministic standpoint). The only thing I am certain of now, is that I should be certain of nothing.
+Though this is far from my own logical calculus, it’s clear now that the approach taken by philosophers like Gödel and Łukasiewicz, while very useful, are limited by their unclear definitions of uncertainty and their treatment of uncertainty as one cohesive similar issue. Any solution to the problem of formalizing uncertain non-classical logic must either consider these in a similar way to myself through a probabilistic lens or reimagine logic entirely (possibly from a deterministic standpoint). The only thing I am certain of now, is that I should be certain of nothing.
 
-\begin{thebibliography}{99}
 
-\bibitem{}
-Aloni, M. (2016, March 23). Disjunction. Stanford Encyclopedia of Philosophy. Retrieved April 11, 2022, from https://plato.stanford.edu/entries/disjunction/\#DisjQuanLogi 
+\includepdf[page=2]{ref.pdf}
 
-\bibitem{}
-Dennett, D. C. (2014). Intuition pumps and other tools for thinking. Penguin books.
-
-\bibitem{}
-Gottwald, S. (2015, March 5). Many-valued logic. Stanford Encyclopedia of Philosophy. Retrieved April 11, 2022, from https://plato.stanford.edu/entries/logic-manyvalued/\#LukLog 
-
-\bibitem{}
-Hammack, R. H. (2018). Book of proof. Richard Hammack. 
-
-\bibitem{}
-Schaffer, J. (2018, December 10). Monism. Stanford Encyclopedia of Philosophy. Retrieved April 11, 2022, from https://plato.stanford.edu/entries/monism/ 
-
-\bibitem{}
-Wyatt, N. (2021, December). A very brief introduction to non-classical logic. Calgary; Western Canada High School via Google Meets. 
-
-\bibitem{}
-Zach, R., Burns, S., Hägg, D., \& Qian, Z. (2020). What if? An Open Introduction to Non-Classical Logics. University of Calgary. 
-
-\end{thebibliography}
 \end{document}
