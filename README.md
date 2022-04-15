@@ -11,4 +11,6 @@ Its also a decent TeX example.
 - Josh
 
 
-If you have any questions at all email me at joshua@himmens.com
+If you have any questions at all email me at joshua@himmens.com. If that email doesnt work, check out https://github.com/Joshuah143.
+
+It's archived beacuse I have submitted it to the IBO so I cant make changes. 
